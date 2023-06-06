@@ -11,3 +11,4 @@ execute unless score %pos init matches 1.. run scoreboard players set %pos spawn
 execute unless score %pos init matches 1.. run scoreboard players set %pos spawnY 64
 execute unless score %pos init matches 1.. run scoreboard players set %pos spawnZ 0
 scoreboard objectives setdisplay list gameDaysSinceDeath 
+scoreboard objectives setdisplay belowName totalDeaths
