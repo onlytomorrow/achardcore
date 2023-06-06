@@ -6,9 +6,14 @@ For use in a private server. Not thoroughly tested.
 
 - After installing the pack and running `/reload`, run `/function ach:setspawn`. This sets the spawn point for revived players. By default it is at x0, y64, z0.
 - `pack_format=15` for compatibility with 1.20+.
+- This pack works with any `playersSleepingPercentage`.
 
 ### Other commands
 
 These functions are run on data pack load, but they can be run if something doesn't work.
 - `/function ach:scoresetup`: creates scoreboard objectives.
 - `/function ach:teamsetup`: creates teams based on death count.
+
+### Soon
+
+- configurable days since death to revive a player
