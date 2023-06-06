@@ -4,6 +4,7 @@ scoreboard objectives add gameDaysSinceDeath dummy "Days Since Death"
 scoreboard objectives add totalDeaths deathCount "Deaths"
 scoreboard objectives setdisplay list gameDaysSinceDeath 
 scoreboard objectives setdisplay belowName totalDeaths
+scoreboard objectives add daytime dummy
 
 # spawn setup
 scoreboard objectives add spawnX dummy

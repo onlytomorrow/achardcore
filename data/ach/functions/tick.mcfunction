@@ -4,7 +4,8 @@ team join orange @a[scores={totalDeaths=7..9},team=!orange]
 team join red @a[scores={totalDeaths=10..},team=!red]
 
 # increment days since death, reset tick counter
-execute as @a[nbt={SleepTimer:100s}] run scoreboard players add * gameDaysSinceDeath 1
+execute store result score #daytime daytime run time query daytime
+execute if score #daytime daytime matches 0..1 run scoreboard players add * gameDaysSinceDeath 1
 scoreboard players add @a[scores={ticksSinceDeath=24000..}] gameDaysSinceDeath 1
 scoreboard players set @a[scores={ticksSinceDeath=24000..}] ticksSinceDeath 0
 
