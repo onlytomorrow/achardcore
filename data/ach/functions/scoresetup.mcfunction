@@ -1,10 +1,14 @@
 # tick counter
-scoreboard objectives add ticksSinceDeath minecraft.custom:minecraft.time_since_death "ACH Day Tick Counter"
-scoreboard objectives add gameDaysSinceDeath dummy "Days Since Death"
+
+# resets after 24000 ticks (1 day)
+scoreboard objectives add ticksSinceDeath minecraft.custom:minecraft.time_since_death
+scoreboard objectives add gameDaysSinceDeath dummy
 scoreboard objectives add totalDeaths deathCount "Deaths"
-scoreboard objectives setdisplay list gameDaysSinceDeath 
-scoreboard objectives setdisplay belowName totalDeaths
+scoreboard objectives add health health
 scoreboard objectives add daytime dummy
+
+scoreboard objectives setdisplay list health
+scoreboard objectives setdisplay belowName totalDeaths
 
 # spawn setup
 scoreboard objectives add spawnX dummy
