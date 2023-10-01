@@ -8,7 +8,7 @@ scoreboard objectives add health health
 scoreboard objectives add daytime dummy
 
 scoreboard objectives setdisplay list health
-scoreboard objectives setdisplay belowName totalDeaths
+scoreboard objectives setdisplay below_name totalDeaths
 
 # spawn setup
 scoreboard objectives add spawnX dummy
